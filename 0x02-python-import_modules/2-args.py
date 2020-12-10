@@ -8,6 +8,6 @@ elif args_list == 1:
     print("{} argument:".format(args_list))
 else:
     print("{} arguments:".format(args_list))
-    for index in range(args_list):
-        index = index + 1
-        print("{}: {}".format(index, sys.argv[index]))
+for index in range(args_list):
+    index = index + 1
+    print("{}: {}".format(index, sys.argv[index]))
