@@ -4,4 +4,5 @@ def no_c(my_string):
     for i in new_string:
         if i in 'Cc':
             del(new_string[new_string.index(i)])
-            return ''.join(new_string)
+            my_string = "".join(new_string)
+            return my_string
