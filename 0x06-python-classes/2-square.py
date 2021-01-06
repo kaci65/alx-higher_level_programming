@@ -1,6 +1,9 @@
 #!/usr/bin/python3
+"""A class Square that defines a square: (based on 1-square.py)"""
+
+
 class Square:
-    """A class Square that defines a square: (based on 1-square.py)"""
+    """Defines a class Square"""
     def __init__(self, size=0):
         if type(size) != int:
             raise TypeError("size must be an integer")
