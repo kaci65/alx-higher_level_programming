@@ -3,10 +3,10 @@
 
 
 class Rectangle:
-    # public class attribute, counting number of instances
+    """public class attribute, counting number of instances"""
     number_of_instances = 0
 
-    # public class attribute, printing # symbol for rectangle
+    """public class attribute, printing # symbol for rectangle"""
     print_symbol = "#"
 
     """Defines and instantiates a  class Rectangle"""
@@ -81,7 +81,7 @@ class Rectangle:
 
     def __del__(self):
         """prints text when an instance of Rectangle is deleted"""
-        print("Bye rectanIgle...")
+        print("Bye rectangle...")
         Rectangle.number_of_instances -= 1
 
     @staticmethod
