@@ -100,4 +100,4 @@ class Rectangle:
     def square(cls, size=0):
         """returns a new Rectangle instance with width == height == size"""
         # turning a rectangle into a square with equal width and height
-        return Rectangle(size, size)
+        return cls(width=size, height=size)
