@@ -3,5 +3,5 @@
 
 
 class Rectangle:
-    # Defines a class Rectangle
+    """Defines a class Rectangle"""
     pass
