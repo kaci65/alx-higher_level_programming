@@ -1,12 +1,12 @@
-#!/usr/bin/python3I
+#!/usr/bin/python3
 """A class Rectangle that defines a rectangle: (based on 6-rectangle.py)"""
 
 
 class Rectangle:
-    # public class attribute, counting number of instances
+    """public class attribute, counting number of instances"""
     number_of_instances = 0
 
-    # public class attribute, printing # symbol for rectangle
+    """public class attribute, printing # symbol for rectangle"""
     print_symbol = "#"
 
     """Defines and instantiates a  class Rectangle"""
@@ -17,12 +17,12 @@ class Rectangle:
 
     @property
     def width(self):
-        # gets value of width
+        """gets value of width"""
         return self.__width
 
     @width.setter
     def width(self, value):
-        # sets value of width
+        """sets value of width"""
         if type(value) != int:
             raise TypeError("width must be an integer")
         if value < 0:
@@ -32,12 +32,12 @@ class Rectangle:
 
     @property
     def height(self):
-        # gets value of height
+        """gets value of height"""
         return self.__height
 
     @height.setter
     def height(self, value):
-        # sets value of height
+        """sets value of height"""
         if type(value) != int:
             raise TypeError("height must be an integer")
         if value < 0:
@@ -81,5 +81,5 @@ class Rectangle:
 
     def __del__(self):
         """prints text when an instance of Rectangle is deleted"""
-        print("Bye rectanIgle...")
+        print("Bye rectangle...")
         Rectangle.number_of_instances -= 1
