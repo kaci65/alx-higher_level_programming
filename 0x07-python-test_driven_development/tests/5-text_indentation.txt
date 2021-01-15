@@ -1,0 +1,41 @@
+The ``5-text_indentation(text)`` module
+===================================
+
+Using ``text_indentation``
+-----------------------------------
+
+This is an example text file in reStructuredText format.  First import
+``text_indentation`` from the ``5-text_indentation`` module:
+
+    >>> text_indentation = __import__('5-text_indentation').text_indentation
+
+# Check if output is correct:
+
+    >>> text_indentation("RE: Text. Me?")
+    RE:
+    <BLANKLINE>
+    Text.
+    <BLANKLINE>
+    Me?
+    <BLANKLINE>
+
+    >>> text_indentation("The soul becomes dyed with the colour of its thoughts: Marcus Aurelius.")
+    The soul becomes dyed with the colour of its thoughts:
+    <BLANKLINE>
+    Marcus Aurelius.
+    <BLANKLINE>
+    
+    If lots of spaces are added:
+    >>> text_indentation("Lotsa spacing:        Don't waste space. Can you rhyme?")
+    Lotsa spacing:
+    <BLANKLINE>
+    Don't waste space.
+    <BLANKLINE>
+    Can you rhyme?
+    <BLANKLINE>
+
+    If text is integer:
+    >>> text_indentation(12)
+    Traceback (most recent call last):
+    ...
+    TypeError: text must be a string
