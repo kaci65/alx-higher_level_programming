@@ -25,5 +25,9 @@ class TestMaxInteger(unittest.TestCase):
     def test_max_one_int(self):
         self.assertEqual(max_integer([9]), 9)
 
+    @unittest.expectedFailure
+    def test_empty_list(self):
+        self.assertEqual(max_integer())
+
 if __name__ == '__main__':
     unittest.main()
