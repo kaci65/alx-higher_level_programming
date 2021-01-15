@@ -6,8 +6,8 @@ def matrix_divided(matrix, div):
     """function to divide elements"""
     """check if row is list"""
     if not isinstance(matrix, list):
-        TypeError("matrix must be a matrix (list of lists) of integers/floats")
-
+        raise TypeError("matrix must be a matrix (list of lists) "
+                        "of integers/floats")
     for row in matrix:
         """check if matrix consists of numbers only"""
         for j in row:
