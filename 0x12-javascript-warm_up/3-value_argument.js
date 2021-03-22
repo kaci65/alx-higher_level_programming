@@ -1,12 +1,7 @@
 #!/usr/bin/node
 // prints frist argument passed
-
-
-if (process.argv[2] == undefined)
-{
-	console.log("No argument");
-}
-else
-{
+if (process.argv[2] === undefined) {
+	console.log('No argument');
+} else {
 	console.log(process.argv[2]);
 }
