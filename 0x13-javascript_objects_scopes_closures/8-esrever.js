@@ -3,9 +3,9 @@
 exports.esrever = function (list) {
   let leftAux = 0;
   let rightAux = list.length - 1;
-  
+
   while (leftAux < rightAux) {
-    let tmp = list[leftAux];
+    const tmp = list[leftAux];
     list[leftAux] = list[rightAux];
     list[rightAux] = tmp;
     leftAux++;
