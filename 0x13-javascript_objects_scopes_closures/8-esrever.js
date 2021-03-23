@@ -11,4 +11,5 @@ exports.esrever = function (list) {
     leftAux++;
     rightAux--;
   }
+  return list;
 };
