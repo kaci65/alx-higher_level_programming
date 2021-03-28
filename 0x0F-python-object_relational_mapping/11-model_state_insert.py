@@ -25,8 +25,8 @@ if __name__ == "__main__":
     Session.configure(bind=engine)
     session = Session()
 
-    add_state = State(name='Louisiana')
-    session.add(add_state)
-    session.commit()
+    add_state = State('name', 'Louisiana')
+    db_url.session.add(add_state)
+    db_url.session.commit()
     print(add_state.id)
     session.close()
