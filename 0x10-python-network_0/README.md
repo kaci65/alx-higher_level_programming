@@ -87,3 +87,29 @@ Write a function that finds a peak in a list of unsorted integers.
     6-peak.py must contain the function
     6-peak.txt must contain the complexity of your algorithm: O(log(n)), O(n), O(nlog(n)) or O(n2)
     Note: there may be more than one peak in the list
+
+### **Advanced Tasks**
+### **100-status_code.sh**
+Bash script that sends a request to a URL passed as an argument, and displays only the status code of the response.
+
+    You are not allowed to use any pipe, redirection, etc.
+    You are not allowed to use ; and &&
+    You have to use curl
+
+Please test your script in the container provided, using the web server running on port 5000
+
+### **101-post_json.sh**
+Bash script that sends a JSON POST request to a URL passed as the first argument, and displays the body of the response.
+
+    Your script must send a POST request with the contents of a file, passed with the filename as the second argument of the script, in the body of the request
+    You have to use curl
+
+Please test your scripts in the container provided, using the web server running on port 5000
+
+### **102-catch_me.sh**
+Bash script that makes a request to 0.0.0.0:5000/catch_me that causes the server to respond with a message containing You got me!, in the body of the response.
+
+    You have to use curl
+    You are not allow to use echo, cat, etc. to display the final result
+
+Please test your script in the container provided, using the web server running on port 5000
