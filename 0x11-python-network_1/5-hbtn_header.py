@@ -1,6 +1,8 @@
 #!/usr/bin/python3
-# takes in URL, sends request to URL & displays value of variable
-# X-Request-Id in the response header
+"""
+takes in URL, sends request to URL & displays value of variable
+X-Request-Id in the response header
+"""
 
 import requests
 import sys
