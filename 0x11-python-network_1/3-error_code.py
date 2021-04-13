@@ -1,8 +1,10 @@
 #!/usr/bin/python3
-# takes in URL, sends request to URL & displays body of response (decoded
-# in utf-8)
-# manage urllib.error.HTTPError exceptions and print: Error code
-# followed by the HTTP status code
+"""
+takes in URL, sends request to URL & displays body of response (decoded
+in utf-8)
+manage urllib.error.HTTPError exceptions and print: Error code
+followed by the HTTP status code
+"""
 
 import urllib.request
 import urllib.error
