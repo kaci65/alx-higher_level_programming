@@ -10,7 +10,7 @@ import sys
 
 
 if __name__ == "__main__":
-    r = requests.get(sys.argv[1])
+    response = requests.get(sys.argv[1])
     if response.raise_for_status >= 400:
         print("Error code: {}".format(response.raise_for_status))
     else:
