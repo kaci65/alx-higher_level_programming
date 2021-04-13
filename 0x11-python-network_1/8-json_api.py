@@ -9,15 +9,15 @@ import sys
 
 
 if __name__ == "__main__":
-    if ((len(sys.agv)) < 2):
-        q = ""
+    if ((len(sys.argv)) < 2):
+        value = ""
     else:
-        q = sys.agv[1]
+        value = sys.argv[1]
 
-    r = requests.post("http://0.0.0.0:5000/search_user", data={"q": letter})
+    r = requests.post("http://0.0.0.0:5000/search_user", data={"q": value})
     try:
         r = response.json()
-        if r != {}:
+        if r:
             print("[{}] {}".format(r.get("id"), r.get("name")))
         else:
             print("No result")
