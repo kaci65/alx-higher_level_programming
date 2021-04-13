@@ -1,3 +1,3 @@
 #!/bin/bash
 # sends request to URL passed as argument, displays only status code of response
-curl -s -o -I /dev/null "$1" --write-out "%{http_code}"
+curl -o /dev/null -s -w "%{http_code}" "$1"
