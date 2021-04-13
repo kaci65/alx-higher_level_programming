@@ -4,6 +4,7 @@ takes your Github credentials (username & password) & uses Github API
 to display your id
 """
 
+from requests.auth import HTTPBasicAuth
 import requests
 import sys
 
