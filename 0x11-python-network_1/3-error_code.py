@@ -12,7 +12,7 @@ from sys import argv
 
 
 if __name__ == "__main__":
-    url = sys.argv[1]
+    url = argv[1]
     req = urllib.request.Request(url)
     try:
         with urllib.request.urlopen(req) as response:
