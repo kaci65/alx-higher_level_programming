@@ -15,5 +15,8 @@ if __name__ == "__main__":
 
     r = requests.get('https://api.github.com/user', auth=('username',
                                                           'password'))
-    r = r.json
-    print(r.get("id"))
+    try:
+        r = response.json
+        print(r.get("id"))
+    except ValueError:
+        print("Not a valid JSON")
