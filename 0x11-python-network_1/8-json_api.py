@@ -1,6 +1,8 @@
 #!/usr/bin/python3
-# takes in letter & sends POST request to http://0.0.0.0:5000/search_user
-# with letter as parameter
+"""
+takes in letter & sends POST request to http://0.0.0.0:5000/search_user
+with letter as parameter
+"""
 
 import requests
 import sys
