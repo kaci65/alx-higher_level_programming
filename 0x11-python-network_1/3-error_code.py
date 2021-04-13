@@ -8,7 +8,7 @@ followed by the HTTP status code
 
 import urllib.request
 import urllib.error
-import sys
+from sys import argv
 
 
 if __name__ == "__main__":
