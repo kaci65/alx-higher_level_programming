@@ -12,7 +12,7 @@ from sys import argv
 
 
 if __name__ == "__main__":
-    req = urllib.request.Request(argv[1])
+    req = argv[1]
     try:
         with urllib.request.urlopen(req) as response:
             data = response.read().decode('utf-8')
