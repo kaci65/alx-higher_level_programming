@@ -7,6 +7,7 @@ followed by the HTTP status code
 """
 
 import urllib.request
+import urllib.parse
 import urllib.error
 from sys import argv
 
@@ -18,5 +19,5 @@ if __name__ == "__main__":
             data = response.read().decode('utf-8')
             print(data)
     except:
-        urllib.error.URLError as e:
+        urllib.error.HTTPError as e:
             print("Error code: {}".format(e.code))
