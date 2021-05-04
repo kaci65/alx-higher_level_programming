@@ -7,7 +7,7 @@ if (process.argv.length === 4) {
   const fileContents = process.argv[3];
   fs.writeFile(filename, fileContents, 'utf-8', function (err) {
     if (err) {
-      console.error(err);
+      console.log(err);
     }
   });
 }

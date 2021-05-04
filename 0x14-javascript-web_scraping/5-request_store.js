@@ -8,7 +8,7 @@ if (process.argv.length === 4) {
   const textFile = process.argv[3];
   request(url, function (err, response, body) {
     if (err) {
-      console.error(err);
+      console.log(err);
     } else {
       fs.writeFile(textFile, body, 'utf-8', function (err) {
         if (err) {

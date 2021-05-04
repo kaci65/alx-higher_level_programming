@@ -8,7 +8,7 @@ if (process.argv.length === 3) {
   let count = 0;
   request(url, function (err, response, body) {
     if (err) {
-      console.error(err);
+      console.log(err);
     } else {
       const numMovies = JSON.parse(body).results;
       for (let i = 0; i < numMovies.length; i++) {

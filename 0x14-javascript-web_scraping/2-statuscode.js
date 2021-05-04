@@ -12,6 +12,6 @@ if (process.argv.length === 3) {
   request
     .get(url)
     .on('error', function (err) {
-      console.error(err);
+      console.log(err);
     });
 }
