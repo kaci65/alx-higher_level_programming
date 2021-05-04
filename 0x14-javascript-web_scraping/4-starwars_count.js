@@ -7,7 +7,7 @@ if (process.argv.length === 3) {
   const actor = '/api/people/18/';
   let count = 0;
   request(url, function (err, response, body) {
-    if (error) {
+    if (err) {
       console.error(err);
     } else {
       const numMovies = JSON.parse(body).results;

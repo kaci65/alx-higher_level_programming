@@ -6,7 +6,7 @@ if (process.argv.length === 3) {
   const filmID = process.argv[2];
   const url = 'https://swapi-api.hbtn.io/api/films/' + filmID;
   request(url, function (err, response, body) {
-    if (error) {
+    if (err) {
       console.error(err);
     } else {
       console.log(JSON.parse(body).title);
