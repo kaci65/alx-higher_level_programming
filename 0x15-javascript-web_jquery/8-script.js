@@ -5,7 +5,7 @@ $(function () {
     success: function(data) {
       $.each(data.results, function(i, film) {
         $('UL#list_movies').append('<li>' + film.title + '</li>');
-      }):
+      })
     }
   });
 });
